@@ -1,0 +1,85 @@
+:root{
+  --bg:#ffffff;
+  --text:#0f172a;
+  --muted:#475569;
+  --brand:#e11d48;
+  --brand-2:#fb7185;
+  --ring:#fecdd3;
+  --chip:#ffe4e6;
+  --card:#fff1f2;
+  --shadow:0 10px 30px rgba(16,24,40,.10);
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text)}
+body{font-family:Poppins, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;}
+
+h1,h2,h3,h4{font-family:'Playfair Display', Georgia, serif;color:#111;letter-spacing:.2px}
+h1{font-weight:700}
+h2{font-weight:700;font-size:clamp(1.6rem, 1.2rem + 1.2vw, 2.2rem)}
+h3{font-weight:600}
+
+img{max-width:100%;height:auto;display:block}
+
+.container{width:min(1200px,92%);margin-inline:auto}
+
+.header{position:sticky;top:0;background:#fff;border-bottom:1px solid #e5e7eb;z-index:40}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:12px}
+.logo{font-weight:700;font-size:1.2rem;color:#111;text-decoration:none}
+.links{display:flex;gap:20px;flex-wrap:wrap}
+.links a{color:var(--muted);text-decoration:none;font-weight:500}
+.links a:hover{color:var(--brand)}
+
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center;padding:56px 0}
+.hero-copy h1{font-size:clamp(2.2rem, 1.6rem + 2.2vw, 3.2rem);line-height:1.08;margin:0 0 10px}
+.hero-copy p{color:var(--muted);margin:0 0 18px;font-size:1.05rem}
+.hero-points{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:16px 0 0;padding:0;list-style:none;color:#0b1324;font-weight:500}
+.hero-media img{border-radius:24px;border:1px solid #ffe4e6;box-shadow:var(--shadow);aspect-ratio:4/3;object-fit:cover}
+
+.btn{padding:12px 18px;border-radius:999px;border:1px solid transparent;cursor:pointer;font-weight:600;text-decoration:none;display:inline-block}
+.btn.primary{background:var(--brand);color:#fff;box-shadow:var(--shadow)}
+.btn.primary:hover{background:#be123c}
+.btn.ghost{border-color:var(--ring);color:var(--brand);background:#fff}
+.btn.ghost:hover{background:#fff1f2}
+.btn.pill{background:#111;color:#fff;border-color:#111}
+.btn.pill:hover{opacity:.9}
+
+.section{padding:28px 0 8px}
+.sub{color:var(--muted);margin:6px 0 18px}
+
+.categories{display:flex;gap:10px;flex-wrap:wrap}
+.chip{background:var(--chip);border:1px solid var(--ring);border-radius:999px;padding:8px 12px;color:#9f1239;font-weight:600}
+.chip:hover{transform:translateY(-1px);box-shadow:var(--shadow)}
+
+.banner{margin:8px auto 24px;width:min(1200px,92%);background:linear-gradient(90deg,#fbcfe8,#fecdd3);border:1px solid #fecdd3;border-radius:24px;padding:16px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;box-shadow:var(--shadow)}
+.banner-copy strong{font-size:1.15rem}
+
+.grid.products{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{border:1px solid #e5e7eb;border-radius:18px;overflow:hidden;background:#fff;display:flex;flex-direction:column;box-shadow:0 2px 10px rgba(16,24,40,.05)}
+.card .media{background:#fff;aspect-ratio:4/3;overflow:hidden}
+.card .media img{width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
+.card:hover .media img{transform:scale(1.04)}
+.card .body{padding:14px}
+.card h3{margin:2px 0 6px}
+.meta{display:flex;align-items:center;justify-content:space-between;color:var(--muted);font-weight:500}
+.price{color:#047857;font-weight:700}
+
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:start;margin:16px 0 34px}
+.box{background:#fff;border:1px solid #e5e7eb;border-radius:18px;padding:16px;box-shadow:var(--shadow)}
+
+.footer{background:#0f172a;color:#e2e8f0;margin-top:28px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:16px;padding:28px 0}
+.footer a{color:#cbd5e1;text-decoration:none}
+.footer a:hover{color:#fff}
+.footer small{display:block;color:#94a3b8;padding:12px 0 22px;border-top:1px solid #1f2937}
+
+@media (max-width: 1024px){
+  .hero{grid-template-columns:1fr}
+  .hero-points{grid-template-columns:1fr}
+  .grid.products{grid-template-columns:repeat(3,1fr)}
+  .about{grid-template-columns:1fr}
+}
+@media (max-width: 640px){
+  .grid.products{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}

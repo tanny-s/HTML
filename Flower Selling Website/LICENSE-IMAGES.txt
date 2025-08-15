@@ -1,0 +1,3 @@
+This demo uses free Unsplash photos via hotlinking (https://source.unsplash.com).
+Unsplash License: https://unsplash.com/license
+No attribution is required, but it's appreciated.

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bloom Boutique • Flower Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <meta name="description" content="Responsive e‑commerce flower shop built with pure HTML & CSS, using free Unsplash images."/>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#">
+        <span class="logo">Bloom Boutique</span>
+      </a>
+      <nav class="links" aria-label="Primary">
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="container hero" id="home">
+    <div class="hero-copy">
+      <h1>Fresh Flowers, Delivered Daily.</h1>
+      <p>Hand‑tied bouquets & custom arrangements from local growers. Same‑day delivery in select areas.</p>
+      <div class="ctas">
+        <a class="btn primary" href="#shop">Shop Bestsellers</a>
+        <a class="btn ghost" href="#about">Learn More</a>
+      </div>
+      <ul class="hero-points">
+        <li>Free Delivery on orders ₹999+</li>
+        <li>Eco‑friendly packaging</li>
+        <li>24/7 chat support</li>
+      </ul>
+    </div>
+    <div class="hero-media">
+      <img src="../flower-shop-refined/images/sixteen-miles-out-c7X-Y5I3CWw-unsplash.jpg" alt="Flower Shop Hero Banner"/>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="container section">
+    <h2>Browse by Category</h2>
+    <p class="sub">Find the perfect stems for birthdays, anniversaries, or just because.</p>
+    <div class="categories">
+      <button class="chip">Roses</button>
+      <button class="chip">Tulips</button>
+      <button class="chip">Lilies</button>
+      <button class="chip">Orchids</button>
+      <button class="chip">Seasonal</button>
+      <button class="chip">Potted</button>
+    </div>
+  </section>
+
+  <!-- Banner -->
+  <aside class="container banner" role="note">
+    <div class="banner-copy">
+      <strong>Summer Sale</strong>
+      <span>Up to 30% off selected bouquets • Use code <b>SUMMER30</b></span>
+    </div>
+    <a class="btn pill" href="#shop">Shop deals</a>
+  </aside>
+
+  <!-- Products -->
+  <section class="container section" id="shop">
+    <h2>Bestsellers</h2>
+    <p class="sub">Our customers’ most‑loved bouquets this week.</p>
+    <div class="grid products">
+      <article class="card">
+        <div class="media"><img src="../flower-shop-refined/images/dan-gold-QfaXkfe5g3A-unsplash.jpg" alt="Sunlit Roses"/></div>
+        <div class="body">
+          <h3>Sunlit Roses</h3>
+          <p class="meta"><span>12 stems</span><span class="price">₹1,299</span></p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="media"><img src="../flower-shop-refined/images/girl-with-red-hat-FQQVve7g2do-unsplash.jpg" alt="Blush Tulips"/></div>
+        <div class="body">
+          <h3>Blush Tulips</h3>
+          <p class="meta"><span>15 stems</span><span class="price">₹1,099</span></p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="media"><img src="../flower-shop-refined/images/linda-knicely-O4AjFEWONYE-unsplash.jpg" alt="White Lilies"/></div>
+        <div class="body">
+          <h3>White Lilies</h3>
+          <p class="meta"><span>10 stems</span><span class="price">₹1,499</span></p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="media"><img src="../flower-shop-refined/images/white-rainforest-TbeDrlYV650-unsplash.jpg" alt="Orchid Dream"/></div>
+        <div class="body">
+          <h3>Orchid Dream</h3>
+          <p class="meta"><span>8 stems</span><span class="price">₹1,899</span></p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="media"><img src="../flower-shop-refined/images/ksenia-obukhova-3Zp2wmjY-nY-unsplash.jpg" alt="Lavender Haze"/></div>
+        <div class="body">
+          <h3>Lavender Haze</h3>
+          <p class="meta"><span>14 stems</span><span class="price">₹1,299</span></p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="media"><img src="../flower-shop-refined/images/marina-matusevich-bJPprl4b9Cc-unsplash.jpg" alt="Garden Mix"/></div>
+        <div class="body">
+          <h3>Garden Mix</h3>
+          <p class="meta"><span>18 stems</span><span class="price">₹1,599</span></p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="media"><img src="../flower-shop-refined/images/andrey-che-MjLsIhQ-ICw-unsplash.jpg" alt="Pastel Bliss"/></div>
+        <div class="body">
+          <h3>Pastel Bliss</h3>
+          <p class="meta"><span>16 stems</span><span class="price">₹1,399</span></p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="media"><img src="../flower-shop-refined/images/alan-villegas-c43mR4bItHw-unsplash.jpg" alt="Peachy Keen"/></div>
+        <div class="body">
+          <h3>Peachy Keen</h3>
+          <p class="meta"><span>12 stems</span><span class="price">₹1,299</span></p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="container section" id="about">
+    <h2>About Bloom Boutique</h2>
+    <p class="sub">We source from family‑owned farms and wrap each bouquet with care. Zero plastic, fully compostable packaging.</p>
+    <div class="about">
+      <div class="box">
+        <h3>Why choose us?</h3>
+        <ul>
+          <li>Locally sourced, seasonal stems</li>
+          <li>Same‑day delivery in metro areas</li>
+          <li>Custom notes and gift wrap</li>
+          <li>Eco‑friendly packaging</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Delivery & Care</h3>
+        <p>We deliver 7 days a week. Trim stems, change water every 2 days, and keep away from direct sunlight for longer‑lasting blooms.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="container section" id="contact">
+    <h2>Get in touch</h2>
+    <p class="sub">Have a custom arrangement in mind? Drop us a message.</p>
+    <div class="about">
+      <div class="box">
+        <p><strong>Email:</strong> hello@bloomboutique.test</p>
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+        <p><strong>Address:</strong> 123 Flower Lane, Pune, MH</p>
+      </div>
+      <div class="box">
+        <p><strong>Hours:</strong> Mon–Sun, 9am–8pm</p>
+        <p><strong>Instagram:</strong> @bloomboutique</p>
+        <p><strong>Note:</strong> Demo site built with pure HTML & CSS.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="grid footer-grid">
+        <div>
+          <h3>Bloom Boutique</h3>
+          <p>Fresh • Local • Lovely.</p>
+        </div>
+        <div>
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#">Roses</a></li>
+            <li><a href="#">Tulips</a></li>
+            <li><a href="#">Lilies</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Help</h4>
+          <ul>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+      <small>© 2025 Bloom Boutique • Demo for education only</small>
+    </div>
+  </footer>
+</body>
+</html>
