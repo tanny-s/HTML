@@ -206,5 +206,47 @@
       <small>© 2025 Bloom Boutique • Demo for education only</small>
     </div>
   </footer>
+  <script>
+// 1. Category filter (demo)
+document.querySelectorAll(".chip").forEach(chip => {
+  chip.addEventListener("click", () => {
+    alert(`Showing flowers in category: ${chip.textContent}`);
+  });
+});
+
+// 2. Product card click (demo)
+document.querySelectorAll(".card").forEach(card => {
+  card.addEventListener("click", () => {
+    let name = card.querySelector("h3").textContent;
+    let price = card.querySelector(".price").textContent;
+    alert(`"${name}" added to cart • ${price}`);
+  });
+});
+
+// 3. Close banner button
+const banner = document.querySelector(".banner");
+if (banner) {
+  const closeBtn = document.createElement("button");
+  closeBtn.textContent = "✕";
+  closeBtn.setAttribute("aria-label", "Close banner");
+  closeBtn.style.background = "transparent";
+  closeBtn.style.border = "none";
+  closeBtn.style.cursor = "pointer";
+  closeBtn.style.fontSize = "1.2rem";
+  banner.appendChild(closeBtn);
+
+  closeBtn.addEventListener("click", () => {
+    banner.style.display = "none";
+  });
+}
+
+// 4. Scroll-to-top shortcut (press T)
+document.addEventListener("keydown", (e) => {
+  if (e.key.toLowerCase() === "t") {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+});
+</script>
+
 </body>
 </html>
