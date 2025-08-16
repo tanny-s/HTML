@@ -18,13 +18,14 @@ All images should be taken from **free-to-use stock photo websites** such as:
 
 ## 📚 Credits
 This project is inspired by front-end development tutorials and was built **for practice purposes only**.  
-It is **not a functional e-commerce store** — it is meant for **HTML/CSS learning and portfolio demonstration**.
+It is **not a functional e-commerce store** — it is meant for **HTML/CSS/JS learning and portfolio demonstration**.
 
 ---
 
 ## 🛠 Technologies Used
 - HTML5
 - CSS3
+- JS
 - Free Stock Images
 
 ---
